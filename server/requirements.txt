@@ -16,7 +16,7 @@ cycler==0.10.0            # via matplotlib
 cython==0.29.6            # via auto-sklearn, configspace, fbprophet, pystan, smac
 docutils==0.14            # via pynisher, sphinx
 ephem==3.7.6.0            # via convertdate
-fbprophet==0.4.post2
+#fbprophet==0.4.post2
 gunicorn==19.9.0
 holidays==0.9.10          # via fbprophet
 httptools==0.0.13         # via sanic
