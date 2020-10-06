@@ -23,7 +23,7 @@ RUN sed -i s#//.*archive.ubuntu.com#//mirrors.aliyun.com# /etc/apt/sources.list 
 RUN cd /home \
     &&  git config --global http.proxy 'socks5://10.10.8.66:1080' \
     &&  git config --global https.proxy 'socks5://10.10.8.66:1080' \
-    && git clone https://github.com/gangtao/dataplay3
+    && git clone https://github.com/data2068/dataplay3
 
 WORKDIR /home/dataplay3
 
@@ -43,7 +43,7 @@ RUN pip3 install numpy==1.16.0 holidays==0.9.8 --force-reinstall -i http://pypi.
 # build client
 RUN cd /home/dataplay3/client && \
     mkdir /home/dataplay3/server/dataplay/static && \
-    npm install --silent && \
+    npm install  && \
     npm run build
 
 EXPOSE 8000

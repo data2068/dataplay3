@@ -1,7 +1,7 @@
-BIN_NAME ?= dataplay3
-VERSION ?= 0.1-dev
+BIN_NAME ?= waf-data
+VERSION ?= 0.1
 IMAGE_NAME ?= $(BIN_NAME):$(VERSION)
-DOCKER_ID_USER ?= naughtytao
+DOCKER_ID_USER ?= rs
 
 docker: Dockerfile
 	docker build  -t $(IMAGE_NAME) .
