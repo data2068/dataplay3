@@ -16,7 +16,6 @@ cycler==0.10.0            # via matplotlib
 cython==0.29.6            # via auto-sklearn, configspace, fbprophet, pystan, smac
 docutils==0.14            # via pynisher, sphinx
 ephem==3.7.6.0            # via convertdate
-#fbprophet==0.4.post2
 gunicorn==19.9.0
 holidays==0.9.10          # via fbprophet
 httptools==0.0.13         # via sanic
@@ -69,6 +68,7 @@ urllib3==1.24.1           # via requests
 uvloop==0.12.2            # via sanic
 websockets==6.0           # via sanic
 xgboost==0.82             # via auto-sklearn
+fbprophet==0.4.post2
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools==41.0.1        # via auto-sklearn, kiwisolver, pynisher, smac, sphinx

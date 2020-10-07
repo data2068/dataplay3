@@ -14,7 +14,13 @@ RUN sed -i s#//.*archive.ubuntu.com#//mirrors.aliyun.com# /etc/apt/sources.list 
         swig \
         curl \
         git \
+        libssl-dev \
+        libffi-dev \
         libgomp1 \
+        libxml2 \
+        libxml2-dev \
+        libxslt1-dev \
+        zlib1g-dev \
         ca-certificates && \
     pip3 install setuptools pip --upgrade && \
     curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
@@ -23,7 +29,8 @@ RUN sed -i s#//.*archive.ubuntu.com#//mirrors.aliyun.com# /etc/apt/sources.list 
 RUN cd /home \
     &&  git config --global http.proxy 'socks5://10.10.8.66:1080' \
     &&  git config --global https.proxy 'socks5://10.10.8.66:1080' \
-    && git clone https://github.com/data2068/dataplay3
+    && git clone https://github.com/data2068/dataplay3 \
+    && git pull
 
 WORKDIR /home/dataplay3
 
