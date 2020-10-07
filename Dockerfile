@@ -30,6 +30,7 @@ RUN cd /home \
     &&  git config --global http.proxy 'socks5://10.10.8.66:1080' \
     &&  git config --global https.proxy 'socks5://10.10.8.66:1080' \
     && git clone https://github.com/data2068/dataplay3 \
+    && cd /home/dataplay3 \
     && git pull
 
 WORKDIR /home/dataplay3
